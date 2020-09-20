@@ -1,0 +1,78 @@
+body {
+    margin: -20px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.my-name {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #84596B;
+    color: white;
+    height: 90px;
+    width: 100%;
+    padding: 20px;
+}
+.my-name p {
+    opacity: 75%;
+    font-size: 45px;
+    margin-left: 50px;
+}
+.photo-wrapper img{
+    height: 350px;
+    opacity: 80%;
+    -webkit-box-shadow: -7px 10px 11px -4px rgba(87,79,87,1);
+    -moz-box-shadow: -7px 10px 11px -4px rgba(87,79,87,1);
+    box-shadow: -7px 10px 11px -4px rgba(87,79,87,1);
+}
+hr {
+    margin: 17px 0px 0px 75px;
+    width: 255px;
+}
+.main {
+    font-family: 'Open Sans', sans-serif;
+    color: #84596B;
+    margin-top: -159px;
+}
+.course-title {
+    margin-left: 75px;
+}
+.lessons {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 55px;
+}
+.footer {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #84596B;
+    color: lightgray;
+    height: 80px;
+    padding: 15px;
+    margin-bottom: -10px;
+    animation: none;
+}
+.first-line {
+    margin-left: 60px;
+}
+.second-line {
+    margin-left: 60px;
+}
+a {
+    text-decoration: none;
+}
+a:link {
+    color:  #84596B;
+}
+a:visited {
+    color: #B58AA5;
+}
+a:hover {
+    color: palevioletred;
+}
