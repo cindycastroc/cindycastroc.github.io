@@ -3,7 +3,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-.header {
+header {
     display: flex;
     justify-content: space-between;
 }
@@ -34,7 +34,7 @@ hr {
     margin: 17px 0px 0px 75px;
     width: 255px;
 }
-.main {
+main {
     font-family: 'Open Sans', sans-serif;
     color: #84596B;
     margin-top: -159px;
@@ -46,7 +46,7 @@ hr {
     font-family: 'Open Sans', sans-serif;
     margin-left: 55px;
 }
-.footer {
+footer {
     font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: column;
