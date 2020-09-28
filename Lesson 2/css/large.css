@@ -1,0 +1,81 @@
+body {
+
+}
+
+header {
+    background-color: #c8eaea;
+    height: 100px;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity-title {
+    font-family: 'Peddana', serif;
+    font-size: 60px;
+}
+
+.my-name {
+    font-family: 'Poppins', sans-serif;
+}
+
+main > .grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 60px;
+    padding: 50px;
+}
+
+main {
+}
+
+.principle {
+}
+
+.principle > .company-information > .title {
+    font-family: 'Peddana', serif;
+    color: #f5797a;
+    font-size: 40px;
+}
+
+
+.principle > .company-information {
+}
+
+.principle > .company-information > .company-name {
+    font-family: 'Poppins', sans-serif;
+}
+
+.principle > .company-information > .link {
+    font-family: 'Poppins', sans-serif;
+}
+
+.link a {
+    text-decoration: none;
+    color: #e0aaaa;
+}
+
+.principle > .example > .screenshot img {
+    height: 630px;
+} 
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: -10px;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #c8eaea;
+}
