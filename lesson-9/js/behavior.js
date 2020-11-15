@@ -22,11 +22,12 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
+    console.table(jsonObject);
     const towns = jsonObject['towns'];
 
     for (let i = 0; i < towns.length; i++ ) {
-        let card = document.createElement('section');
-        let name = document.createElement('name');
+        let entry = document.createElement('section');
+        let name = document.createElement('h3');
         let motto = document.createElement('p');
         let yearFounded = document.createElement('p');
         let photo = document.createElement('img');
@@ -38,12 +39,12 @@ fetch(requestURL)
         photo.setAttribute('src', 'images/' + towns[i].photo);
         photo.setAttribute('alt', 'Image' + towns[i].order);
 
-        card.appendChild(name);
-        card.appendChild(motto);
-        card.appendChild(yearFounded);
-        card.appendChild(photo);
+        entry.appendChild(name);
+        entry.appendChild(motto);
+        entry.appendChild(yearFounded);
+        entry.appendChild(photo);
 
-        document.querySelector('div.cards').appendChild(card);
+        document.querySelector('div.entries').appendChild(entry);
       }  
   });
 
