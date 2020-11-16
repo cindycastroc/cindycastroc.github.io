@@ -1,0 +1,18 @@
+@media only screen and (min-width: 870px)  {
+    .container {
+        width: 100%;
+    }
+    .content {
+        width: 500px;
+      }
+
+    .five-day-forecast {
+        width: 500px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
