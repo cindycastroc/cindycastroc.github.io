@@ -11,3 +11,7 @@ theDate.setTime((theDate.getTime()+(5000*60*60)) )
 with (theDate) { 
 document.write(+getDate()+' '+months[getMonth()]+' '+getYear()+' '+getHours()+':'+getMinutes()+" GMT</i>") 
 } 
+
+if (new Date().getDay() != 5) {
+    document.querySelector("saturday").style.display = "none";
+}

@@ -2,6 +2,17 @@ body {
   margin: 0;
 }
 
+.saturday {
+  font-family: "Montserrat", sans-serif;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkred;
+  color: white;
+  padding: 10px;
+}
+
 header {
   width: 100%;
   height: 114px;
@@ -186,9 +197,10 @@ main > .principal-title {
 }
 
 .content-hero-image {
+  
   display: grid;
-  grid-template-columns: [s] 50px [image-s] 300px [image-e] 1fr [e];
-  grid-template-rows: [s] 50px [image-s] 250px [image-e] 1fr [e];
+    grid-template-columns: [s] 5px [image-s] 300px [image-e] 1fr [e];
+    grid-template-rows: [s] 5px [image-s] 250px [image-e] 1fr [e];
 }
 
 .content-hero-image img {
@@ -202,7 +214,9 @@ main > .principal-title {
 .content-hero-text {
   grid-column: image-s/image-e;
   grid-row: image-s/image-e;
-  width: 300px;
+  width: 150px;
+  height: 150px;
+  font-size: 12px;
   display: flex;
   flex-direction: column;
   background-color: #262626;
@@ -213,6 +227,7 @@ main > .principal-title {
   -moz-box-shadow: 0px 0px 13px 1px rgba(38, 38, 38, 1);
   box-shadow: 0px 0px 13px 1px rgba(38, 38, 38, 1);
 }
+
 
 .content-hero-title h3 {
   margin-bottom: 0;
@@ -374,4 +389,27 @@ footer {
   .down {
     width: 50%;
   }
+
+  .content-hero-image {
+    display: grid;
+  grid-template-columns: [s] 50px [image-s] 300px [image-e] 1fr [e];
+  grid-template-rows: [s] 50px [image-s] 250px [image-e] 1fr [e];
+  }
+
+  .content-hero-text {
+    grid-column: image-s/image-e;
+    grid-row: image-s/image-e;
+    width: 300px;
+    height: 300px;
+    font-size: 18px;
+  }
+
+  .change {
+    z-index: 1;
+  }
+}
+
+.active {
+  background-color: goldenrod;
+  border-radius: 10px;
 }
