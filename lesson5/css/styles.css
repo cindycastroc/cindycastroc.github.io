@@ -83,6 +83,7 @@ h2 {
   position: fixed;
   top: 0;
   right: -300px;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,6 +96,7 @@ h2 {
 
 .change {
   right: 0;
+  z-index: 1;
 }
 
 .hamburger-menu {
