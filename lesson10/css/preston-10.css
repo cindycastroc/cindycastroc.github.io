@@ -1,0 +1,18 @@
+.fiveday {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1px;
+}
+
+.fiveday > p {
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+}

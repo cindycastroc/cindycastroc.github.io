@@ -83,6 +83,7 @@ body {
     position: fixed;
     top: 0;
     right: -300px;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,6 +96,7 @@ body {
   
   .change {
     right: 0;
+    z-index: 1;
   }
   
   .hamburger-menu {
@@ -413,3 +415,36 @@ body {
     background-color: goldenrod;
     border-radius: 10px;
   }
+
+  /* FIVE DAY FORECAST STYLES */
+  .fiveday {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2px;
+    width: 90%;
+    background: cadetblue;
+    margin: 20px;
+    flex-direction: column;
+}
+
+.fiveday h2 {
+  border: none;
+}
+
+.fiveday > .content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+}
+.fiveday > .content > p {
+    width: 150px;
+    height: 150px;
+    background-color: bisque;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    display: flex;
+}
