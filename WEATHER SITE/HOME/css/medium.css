@@ -1,0 +1,53 @@
+@media only screen and (min-width: 700px) {
+    .content-contact-information {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .nav-list {
+      display: flex;
+    }
+    .nav-list li {
+      display: block;
+      flex: 1 1 auto;
+    }
+    .nav-list a {
+      text-align: center;
+    }
+    /* .nav-list li:first-child {
+      display: none;
+    } */
+    .navbar {
+      background-color: #262626;
+      position: inherit;
+      top: 0;
+      right: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: inherit;
+      transition: right 0.8s;
+    }
+  
+    .hamburger-menu {
+      display: none;
+    }
+  
+    .down {
+      width: 50%;
+    }
+  
+    .mountain {
+      position: relative;
+    }
+  
+    .content-hero-text {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      width: 300px;
+      height: 240px;
+      font-size: 1em;
+      margin-top: 0;
+    }
+  }

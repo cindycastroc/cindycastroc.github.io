@@ -1,0 +1,74 @@
+/* FORM */
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+/*----------- FORM --------------*/
+.report {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    padding: 0px 20px;
+    margin-bottom: -7px;
+}
+
+form fieldset {
+    margin:2rem 0;
+}
+
+form legend {
+    color: #262626;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #262626;
+    font-size: 1rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #15e6cdff;
+    border-radius: 3px;
+    padding: .75rem;
+    width: 90%;
+    max-width: 20rem;
+    background-color: white;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #262626;
+    color: #15e6cdff;
+    border-radius: .5rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    height: 60px;
+    font-size: 150%;
+    max-width: 20rem;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.report-img {
+    width: 300px;
+    margin-top: 38px;
+}

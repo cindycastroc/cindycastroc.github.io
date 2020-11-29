@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+  <saturday>
+    <div class="saturday">
+      Saturday = Preston Pancakes<br> in the Park!  
+      9:00 a.m. Saturday<br> at the city park pavilion."
+    </div>
+  </saturday>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="Preston Town Page continued with JavaScript Banner ">
+    <title>Preston</title>
     <link rel="stylesheet" href="../normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <!-- <link
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap"
       rel="stylesheet"
-    /> -->
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
@@ -36,10 +43,10 @@
         </div>
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="#" class="nav-link">Home</a>
+            <a href="../HOME/index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Preston</a>
+            <a href="./preston-5.html" class="nav-link active">Preston</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">Soda Springs</a>
@@ -48,28 +55,20 @@
             <a href="#" class="nav-link">Fish Haven</a>
           </li>
           <li class="nav-item">
-            <a href="../lesson8/stormcenter.html" class="nav-link">Storm Center</a>
+            <a href="../STORM CENTER/stormcenter.html" class="nav-link">Storm Center</a>
           </li>
           <li class="nav-item">
-            <a href="../lesson7/gallery-7.html" class="nav-link">Gallery</a>
+            <a href="../GALLERY/gallery-7.html" class="nav-link">Gallery</a>
           </li>
         </ul>
       </nav>
     </div>
     <main>
       <div class="principal-title">PRESTON IDAHO</div>
-
-      <picture class="mountain">
-        <source
-          srcset="./images/mountain1.jpg"
-          media="(min-width:600px) and (max-width: 900px)"
-        />
-        <source
-          srcset="./images/mountain2.jpg"
-          media="(min-width:900px) and (max-width:1200px)"
-        />
-        <source srcset="./images/mountain3.jpg" media="(min-width:1200px)" />
-        <img src="./images/mountain.jpg" alt="Mountain" />
+      <div class="content-hero-image">
+        <img src="./images/mountain1.jpg" alt="Mountains photo" class="SMALL" />
+        <img src="./images/mountain2.jpg" alt="Mountains photo" class="MEDIUM" />
+        <img src="./images/mountain3.jpg" alt="Mountains photo" class="LARGE" />
 
         <div class="content-hero-text">
           <div class="content-hero-title">
@@ -83,7 +82,6 @@
               <p>Wind Chill:</p>
               <p>Humidity:</p>
               <p>Wind Speed:</p>
-              <p>Wind Chill:</p>
             </div>
 
             <div class="hero-information-right">
@@ -92,19 +90,40 @@
               <p>Wind Chill</p>
               <p>Humidity</p>
               <p>Wind Speed</p>
-              <p>Windchill</p>
             </div>
           </div>
         </div>
-      </picture>
-
-      <div class="five-day-forecast">
-        <p>Five Day Forecast</p>
       </div>
+      <div class="fiveday">
+        <h2>Five Day Forecast</h2>
+        <div class="content">
+          <p>
+              <span id="dayofweek1"></span>
+              <span id="forecast1"></span>&deg; F
+          </p>
+          <p>
+              <span id="dayofweek2"></span>
+              <span id="forecast2"></span>&deg; F
+          </p>
+          <p>
+              <span id="dayofweek3"></span>
+              <span id="forecast3"></span>&deg; F
+          </p>
+          <p>
+              <span id="dayofweek4"></span>
+              <span id="forecast4"></span>&deg; F
+          </p>
+          <p>
+              <span id="dayofweek5"></span>
+              <span id="forecast5"></span>&deg; F
+          </p>
+        </div>
+    </div>
       <div class="content-article-information">
         <div class="paragraph">
-          <p class="title">RELATIONAL HEALTH</p>
+          <p class="title">HIKING RELATIONAL HEALTH</p>
           <p>
+            <img src="./images/people-walking.jpg" alt="People hiking" />
             You don’t have to go it alone next time you lace up your hiking boots. 
             Grab a friend, neighbor, or family member for more fun on the trail. 
             Hiking with a partner, or even in a group, can improve the strength and 
@@ -114,12 +133,16 @@
             companions. Whether it’s with a younger sibling, neighborhood friend, or 
             even a grandparent, hiking a trail together can bring you closer and help 
             build a healthy relationship.
+            <br>
+            <br>
+            See more at 
+            https://www.nps.gov/subjects/trails/benefits-of-hiking.htm
           </p>
-        </div>
 
-        <div class="image">
-          <img src="./images/people-walking.jpg" alt="People hiking" />
         </div>
+        <!-- <div class="image">
+          <img src="./images/people-walking.jpg" alt="People hiking" />
+        </div> -->
       </div>
       <div class="content-contact-information">
         <div class="contact-information-left">
@@ -127,7 +150,6 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.726282523094!2d-111.91534459120224!3d42.09980531205498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2smx!4v1602984604503!5m2!1sen!2smx"
             width="600"
             height="450"
-            frameborder="0"
             style="border: 0"
             allowfullscreen=""
             aria-hidden="false"
@@ -136,9 +158,8 @@
         </div>
 
         <div class="contact-information-right">
+          <p>MUM TERRA SITE</p>
           <div class="up">
-            <p>MUM TERRA SITE</p>
-
             <div class="icon">
               <i class="fas fa-map-marker-alt"></i>
               Preston, Idaho
@@ -180,19 +201,10 @@
         <a href="https://www.byui.edu/online">BYUI ONLINE LEARNING</a>
       </div>
       <div class="second-line">
-        LAST UPDATED:
-        <script src="./js/behavior.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-        <script>
-          WebFont.load({
-            google: {
-              families: ["Roboto", "Slab"],
-            },
-          });
-        </script>
+        LAST UPDATED:   <script src="./js/behavior.js"></script>
       </div>
     </footer>
+    <script src="js/forecast.js"></script>
     <script src="./js/behavior.js"></script>
-    <script src="./js/windchill.js"></script>
   </body>
 </html>
