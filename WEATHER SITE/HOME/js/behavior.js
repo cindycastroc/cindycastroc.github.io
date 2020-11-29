@@ -34,7 +34,7 @@ fetch(requestURL)
         let yearFounded = document.createElement('yearfounded');
         let population = document.createElement('population');
         let annualrain = document.createElement('annualrain');
-        let photo = document.createElement('img');
+        let image = document.createElement('img');
 
         town.appendChild(entry);
 
@@ -49,11 +49,11 @@ fetch(requestURL)
         entry.appendChild(yearFounded);
         entry.appendChild(population);
         entry.appendChild(annualrain);
-        entry.appendChild(photo);
+        entry.appendChild(image);
 
-        photo.setAttribute('class', 'image');
-        photo.setAttribute('src', 'images/' + towns[i].photo);
-        photo.setAttribute('alt', 'Image of ' + towns[i].name);
+        image.setAttribute('class', 'image');
+        image.setAttribute('src', 'images/' + towns[i].photo);
+        image.setAttribute('alt', 'Image of ' + towns[i].name);
 
 
         document.querySelector('div.entries').appendChild(entry);
