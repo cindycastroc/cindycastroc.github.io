@@ -419,34 +419,6 @@ footer {
   background-color: goldenrod;
   border-radius: 10px;
 }
-/* 
-@media only screen and (max-width: 610px) {
-  .MEDIUM {
-    display: none;
-  }
-  .LARGE {
-  display: none;
-  }
-}
-@media only screen and (min-width: 830px) {
-  .MEDIUM {
-    display: none;
-  }
-  .SMALL{
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 610px and max-width: 830px) {
-  .SMALL {
-    display: none;
-  }
-  .LARGE {
-  display: none;
-  }
-} */
-
-
 
 @media only screen and (max-width: 40em) { 
   .MEDIUM {
@@ -480,6 +452,7 @@ footer {
   }
  } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 
+
  /* FIVE DAY FORECAST */
  .fiveday {
   display: flex;
@@ -487,7 +460,10 @@ footer {
   align-items: center;
   justify-content: space-around;
   padding: 1px;
+  background-color: linen;
+  margin: 10px;
 }
+
 
 .fiveday > p {
   width: 100px;
@@ -500,3 +476,39 @@ footer {
   display: flex;
   flex-direction: column;
 }
+
+@media only screen and (max-width: 40em) { 
+  .fiveday {
+    display: none;
+  }
+} 
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+  .fiveday .content {
+    display: flex;
+    min-width: 640px;
+    justify-content: center;
+  }
+
+  .fiveday .content p {
+    width: auto;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 7em;
+  }
+} 
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  .fiveday .content {
+    display: flex;
+  }
+
+  .fiveday .content p {
+    width: auto;
+    margin: 10px;
+    padding: 5px;
+  }
+  
+
+ } 

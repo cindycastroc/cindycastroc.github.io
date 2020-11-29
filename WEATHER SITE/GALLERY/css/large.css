@@ -39,6 +39,7 @@ section {
   position: fixed;
   top: 0;
   right: -300px;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,6 +52,7 @@ section {
 
 .change {
   right: 0;
+  z-index: 1;
 }
 
 .hamburger-menu {
@@ -90,7 +92,7 @@ section {
 
 .nav-item {
   list-style: none;
-  margin: 25px;
+  margin: 10px;
 }
 
 .nav-link {
@@ -98,13 +100,12 @@ section {
   font-size: 16px;
   color: #eee;
   font-weight: 300;
-  letter-spacing: 1px;
   text-transform: uppercase;
   position: relative;
   padding: 3px 0;
   font-family: "Montserrat", sans-serif;
   transition: all 0.3s ease-in-out;
-  padding: 10px;
+  padding: 6px;
 }
 
 .nav-link:hover {
@@ -138,6 +139,7 @@ section {
 .nav-link::after {
   transform: scaleX(1);
 }
+
 
 main {
   margin-bottom: 40px;
