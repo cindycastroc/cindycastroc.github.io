@@ -1,0 +1,502 @@
+body {
+  margin: 0;
+}
+
+.saturday {
+  font-family: "Montserrat", sans-serif;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkred;
+  color: white;
+  padding: 10px;
+}
+
+header {
+  width: 100%;
+  height: 114px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto Slab", serif;
+  background-color: #262626;
+}
+
+.logo-holder img {
+  width: 88px;
+  margin-right: 8px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+
+.site-header {
+  font-size: 22px;
+  color: #cddaeb;
+}
+
+.motto {
+  color: #cddaeb;
+}
+
+.container {
+  width: 100%;
+}
+
+h2 {
+  border: 1px solid;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  font-family: "Montserrat", sans-serif;
+}
+
+.content p {
+  border: 2px outset lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 90vw;
+  font-family: "Montserrat", sans-serif;
+}
+
+.five-day-forecast p {
+  border: 2px outset lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 90vw;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  height: 100%;
+  background-color: #262626;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20% 0 0 60%;
+  transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+  -webkit-box-shadow: 0px 0px 13px 1px rgba(38, 38, 38, 1);
+  -moz-box-shadow: 0px 0px 13px 1px rgba(38, 38, 38, 1);
+  box-shadow: 0px 0px 13px 1px rgba(38, 38, 38, 1);
+}
+
+.change {
+  right: 0;
+  z-index: 1;
+}
+
+.hamburger-menu {
+  width: 30px;
+  height: 25px;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: #15e6cdff;
+  transition: all 0.8s;
+}
+
+.change .line-1 {
+  transform: rotateZ(-405deg) translate(-8px, 6px);
+}
+
+.change .line-2 {
+  opacity: 0;
+}
+
+.change .line-3 {
+  transform: rotateZ(405deg) translate(-8px, 6px);
+}
+
+.nav-list {
+  padding-left: 0;
+}
+
+.nav-item {
+  list-style: none;
+  margin: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 16px;
+  color: #eee;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: relative;
+  padding: 3px 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s ease-in-out;
+  padding: 6px;
+}
+
+.nav-link:hover {
+  background-color: #15e6cdff;
+  border-radius: 5px;
+  color: #262626;
+}
+
+.nav-link::before,
+.nav-link::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.nav-link::after {
+  bottom: 0;
+  transform-origin: right;
+}
+
+.nav-link::before {
+  bottom: 0;
+  transform-origin: left;
+}
+
+.nav-link::before,
+.nav-link::after {
+  transform: scaleX(1);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main > .principal-title {
+  font-family: "Roboto Slab";
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+.content-hero {
+  width: 100%;
+}
+
+.content-hero-image {
+  
+  display: grid;
+    grid-template-columns: [s] 5px [image-s] 300px [image-e] 1fr [e];
+    grid-template-rows: [s] 5px [image-s] 250px [image-e] 1fr [e];
+}
+
+.content-hero-image img {
+  width: -webkit-fill-available !important;
+  max-height: 650px;
+  width: auto;
+  grid-column: s/e;
+  grid-row: s/e;
+}
+
+.content-hero-text {
+  grid-column: image-s/image-e;
+  grid-row: image-s/image-e;
+  width: 150px;
+  height: 150px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  background-color: #262626;
+  color: #fff;
+  padding: 1rem;
+  opacity: 0.8;
+  -webkit-box-shadow: 0px 0px 13px 1px rgba(38, 38, 38, 1);
+  -moz-box-shadow: 0px 0px 13px 1px rgba(38, 38, 38, 1);
+  box-shadow: 0px 0px 13px 1px rgba(38, 38, 38, 1);
+}
+
+
+.content-hero-title h3 {
+  margin-bottom: 0;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+}
+
+.content-hero-information {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.hero-information-left {
+  text-align: end;
+}
+
+.content-article-information {
+  width: 80%;
+  border: 1px solid gray;
+  background-color: lightgray;
+  display: flex;
+  padding: 10px;
+  height: 100%;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.paragraph {
+  padding-right: 2rem;
+  max-width: 620px;
+
+}
+
+.down {
+  justify-content: space-around;
+}
+
+p img {
+  height: 250px;
+  float: left;
+  margin-right: 15px;
+}
+
+.image img {
+  max-height: 200px;
+  -webkit-box-shadow: 0px 0px 13px 1px rgba(38, 38, 38, 1);
+  -moz-box-shadow: 0px 0px 13px 1px rgba(38, 38, 38, 1);
+  box-shadow: 0px 0px 13px 1px rgba(38, 38, 38, 1);
+}
+
+.content-contact-information {
+  width: 80%;
+  max-height: 300px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column !important;
+}
+
+.contact-information-left iframe {
+  width: -webkit-fill-available;
+  height: 100%;
+}
+
+.contact-information-right {
+  text-align: center;
+}
+
+.down {
+  display: flex;
+  align-items: center;
+}
+
+
+.icon {
+  cursor: pointer;
+  margin-bottom: -10px;
+}
+
+i {
+    font-size: 25px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.fa-facebook-f {
+  color: #2e4c86;
+}
+
+.fa-pinterest {
+  color: #b7071c;
+}
+
+.fa-twitter {
+  color: #049aeb;
+}
+
+.fa-whatsapp {
+  color: #1ad03f;
+}
+
+footer {
+  background-color: #262626;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  font-family: "Roboto Slab", serif;
+  -webkit-box-shadow: 0px 0px 13px 1px rgba(38, 38, 38, 1);
+  -moz-box-shadow: 0px 0px 13px 1px rgba(38, 38, 38, 1);
+  box-shadow: 0px 0px 13px 1px rgba(38, 38, 38, 1);
+}
+
+.first-line {
+  margin-bottom: 0.7rem;
+}
+
+.first-line a {
+  text-decoration: none;
+  color: #15e6cdff;
+}
+
+@media only screen and (min-width: 610px) {
+
+  .content-contact-information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+  .nav-list li {
+    display: block;
+    flex: 1 1 auto;
+  }
+  .nav-list a {
+    text-align: center;
+  }
+
+  .navbar {
+    background-color: #262626;
+    position: inherit;
+    top: 0;
+    right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: inherit;
+    transition: right 0.8s;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .content-hero-image {
+    display: grid;
+  grid-template-columns: [s] 50px [image-s] 300px [image-e] 1fr [e];
+  grid-template-rows: [s] 50px [image-s] 250px [image-e] 1fr [e];
+  width: 100%;
+  }
+
+  .content-hero-text {
+    grid-column: image-s/image-e;
+    grid-row: image-s/image-e;
+    width: 300px;
+    height: 300px;
+    font-size: 18px;
+  }
+
+  .change {
+    z-index: 1;
+  }
+}
+
+.active {
+  background-color: goldenrod;
+  border-radius: 10px;
+}
+/* 
+@media only screen and (max-width: 610px) {
+  .MEDIUM {
+    display: none;
+  }
+  .LARGE {
+  display: none;
+  }
+}
+@media only screen and (min-width: 830px) {
+  .MEDIUM {
+    display: none;
+  }
+  .SMALL{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 610px and max-width: 830px) {
+  .SMALL {
+    display: none;
+  }
+  .LARGE {
+  display: none;
+  }
+} */
+
+
+
+@media only screen and (max-width: 40em) { 
+  .MEDIUM {
+    display: none;
+  }
+
+  .LARGE {
+    display: none;
+  }
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+/* // Medium screens */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+  .SMALL {
+    display: none;
+  }
+
+  .LARGE {
+    display: none;
+  }
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+/* // Large screens */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  .SMALL {
+    display: none;
+  }
+
+  .MEDIUM {
+    display: none;
+  }
+ } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+ /* FIVE DAY FORECAST */
+ .fiveday {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1px;
+}
+
+.fiveday > p {
+  width: 100px;
+  height: 100px;
+  background-color: bisque;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+}
