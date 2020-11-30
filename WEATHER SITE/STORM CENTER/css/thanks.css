@@ -1,0 +1,25 @@
+main {
+    font-family: 'Roboto', sans-serif;
+}
+
+.principal {
+    font-size: 49px;
+    margin: 20px 0px;
+}
+
+.secondary {
+    font-size: 18px;
+    margin: 10px 0px;
+}
+
+.link {
+    margin-top: 100px;
+}
+
+.link a {
+    text-decoration: none;
+    color: cyan;
+    background-color: black;
+    padding: 10px;
+    border-radius: 8px;
+}
