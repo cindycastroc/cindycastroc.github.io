@@ -12,6 +12,11 @@ header {
   background-color: #262626;
 }
 
+
+.hamburger-menu {
+  display: none;
+}
+
 .logo-holder img {
   width: 88px;
   height: 100%;
@@ -36,18 +41,18 @@ section {
 .navbar {
   height: 100%;
   background-color: #262626;
-  position: fixed;
-  top: 0;
-  right: -300px;
   z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 20% 0 0 60%;
-  transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+  transition: right 0.8s cubi c-bezier(1, 0, 0, 1);
   -webkit-box-shadow: 0px 0px 13px 1px rgba(38, 38, 38, 1);
   -moz-box-shadow: 0px 0px 13px 1px rgba(38, 38, 38, 1);
   box-shadow: 0px 0px 13px 1px rgba(38, 38, 38, 1);
+}
+
+.nav-list {
+  display: flex;
 }
 
 .change {
@@ -55,17 +60,7 @@ section {
   z-index: 1;
 }
 
-.hamburger-menu {
-  width: 30px;
-  height: 25px;
-  position: fixed;
-  top: 50px;
-  right: 50px;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
+
 
 .line {
   width: 100%;
@@ -216,3 +211,6 @@ footer {
   background-color: goldenrod;
   border-radius: 10px;
 }
+
+
+/* here */
