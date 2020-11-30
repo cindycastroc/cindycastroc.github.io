@@ -337,6 +337,11 @@ body {
     iframe {
       width: 98%;
     }
+
+    sectionapi:nth-child(2) img {
+      margin-right: 0 !important;
+    }
+
   } 
 
   @media only screen and (min-width: 40.063em) and (max-width: 64em) {
@@ -356,9 +361,32 @@ body {
     position: absolute;
     right: 10px;
     }
+
+    sectionapi:nth-child(1) {
+      align-items: flex-start;
+    }
+
+    sectionapi:nth-child(2) {
+      align-items: flex-end !important;
+    }
+
+    sectionapi:nth-child(3) {
+      align-items: flex-start !important;
+    }
+
+    sectionapi:nth-child(2) img {
+      margin-right: 57%;
+    }
+
+    sectionapi:nth-child(3) .motto {
+      width: 50%;
+    }
+  
   } 
   @media only screen and (min-width: 64.063em) and (max-width: 90em) {
-
+    sectionapi {
+      align-items: center;
+    }
    } 
 /* 
    @media only screen and (max-width: 40em) { 
