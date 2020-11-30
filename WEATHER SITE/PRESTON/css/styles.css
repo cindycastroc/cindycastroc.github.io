@@ -257,7 +257,6 @@ main > .principal-title {
   display: flex;
   padding: 10px;
   height: 100%;
-  margin: 10px;
 }
 
 .title {
@@ -289,7 +288,6 @@ p img {
 
 .content-contact-information {
   width: 80%;
-  max-height: 300px;
   padding: 1.5rem;
   display: flex;
   flex-direction: column !important;
@@ -302,6 +300,14 @@ p img {
 
 .contact-information-right {
   text-align: center;
+}
+
+.contact-information-right > p {
+  font-weight: 600;
+  text-align: center;
+  font-size: 22px;
+  font-family: 'Roboto';
+  color: darkcyan;
 }
 
 .down {
