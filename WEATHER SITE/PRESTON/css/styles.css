@@ -269,10 +269,6 @@ main > .principal-title {
 
 }
 
-.down {
-  justify-content: space-around;
-}
-
 p img {
   height: 250px;
   float: left;
@@ -308,11 +304,13 @@ p img {
   font-size: 22px;
   font-family: 'Roboto';
   color: darkcyan;
+  margin: 0;
 }
 
 .down {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 
