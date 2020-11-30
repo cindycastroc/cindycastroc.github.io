@@ -342,6 +342,10 @@ body {
       margin-right: 0 !important;
     }
 
+    sectionapi:nth-child(3) motto {
+      width: 100% !important;
+    }
+
   } 
 
   @media only screen and (min-width: 40.063em) and (max-width: 64em) {
@@ -378,7 +382,7 @@ body {
       margin-right: 57%;
     }
 
-    sectionapi:nth-child(3) .motto {
+    sectionapi:nth-child(3) motto {
       width: 50%;
     }
   
@@ -386,6 +390,10 @@ body {
   @media only screen and (min-width: 64.063em) and (max-width: 90em) {
     sectionapi {
       align-items: center;
+    }
+
+    sectionapi:nth-child(3) motto {
+      width: 100%;
     }
    } 
 /* 
